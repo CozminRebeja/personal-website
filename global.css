@@ -105,6 +105,8 @@ nav {
   position: fixed;
   width: 100%;
   justify-items: center;
+  margin-top: 32px;
+  z-index: 10;
 }
 
 nav ul {
@@ -158,12 +160,6 @@ nav a:hover {
   gap: 16px;
   width: 100%;
   height: 50%;
-}
-
-.hero-content h1 {
-  font-size: 3.33em;
-  margin-block-start: 0;
-  margin-block-end: 0;
 }
 
 .hero-content p {
@@ -246,10 +242,36 @@ nav a:hover {
   width: 100%;
 }
 
+/* CTA */
+#CTA {
+  display: flex;
+  padding: 96px;
+  border: 1px solid var(--gray-100);
+  border-radius: 32px;
+  gap: 96px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 33%;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: 1px solid var(--gray-100);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
 /* footer */
 footer {
-  background-color: #333;
-  color: white;
-  padding: 20px;
+  padding: 96px;
   text-align: center;
+}
+
+footer a {
+  color: var(--brand-500);
+  text-decoration: none;
 }

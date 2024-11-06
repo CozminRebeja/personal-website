@@ -13,6 +13,16 @@ body {
   font-family: inter, sans-serif;
 }
 
+h1 {
+  font-size: 64px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h2 {
+  font-size: 48px;
+}
+
 .link-button {
   padding: 0px;
   color: var(--gray-950);
@@ -24,6 +34,17 @@ body {
   width: 12px;
 }
 
-.button-m {
+button {
+  padding: 10px;
   background-color: var(--brand-500);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #e64a19;
 }
