@@ -1,0 +1,29 @@
+:root {
+  /* brand */
+  --brand-500: #ff4f1f;
+
+  /* gray */
+  --gray-25: #fcfcfc;
+  --gray-100: #edebeb;
+  --gray-700: #878787;
+  --gray-950: #121111;
+}
+
+body {
+  font-family: inter, sans-serif;
+}
+
+.link-button {
+  padding: 0px;
+  color: var(--gray-950);
+  display: flex;
+  gap: 8px;
+}
+
+.link-button img {
+  width: 12px;
+}
+
+.button-m {
+  background-color: var(--brand-500);
+}
