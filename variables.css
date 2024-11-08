@@ -31,6 +31,10 @@ section {
   width: -webkit-fill-available;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   font-size: 16px;
   color: var(--gray-700);

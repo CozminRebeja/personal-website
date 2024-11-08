@@ -50,6 +50,10 @@
   text-align: left;
 }
 
+.gap-64px {
+  gap: 64px;
+}
+
 mark {
   color: var(--brand-500);
   background: none;
@@ -279,6 +283,12 @@ table td {
 
 td li {
   margin-inline-start: 16px;
+}
+
+/* Contact */
+
+#Contact img {
+  border-radius: 32px;
 }
 
 /* CTA */
