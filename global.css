@@ -95,6 +95,12 @@ ul {
   gap: 16px;
 }
 
+.grid-3row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
 /* nav */
 nav {
   position: fixed;
@@ -145,6 +151,7 @@ nav a:hover {
 }
 
 #hero-second {
+  margin-top: 96px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -243,6 +250,35 @@ nav a:hover {
 
 #Gallery .card img:hover {
   scale: 1.05;
+}
+
+/* Tables */
+
+table {
+  border: 1px solid var(--gray-100);
+  padding: 16px;
+  border-radius: 16px;
+  text-align: left;
+  gap: 16px;
+}
+
+td,
+th {
+  padding: 16px;
+}
+
+table th {
+  font-size: 18px;
+  color: var(--gray-950);
+}
+
+table td {
+  font-size: 15px;
+  color: var(--gray-700);
+}
+
+td li {
+  margin-inline-start: 16px;
 }
 
 /* CTA */
