@@ -9,10 +9,29 @@
   justify-content: space-between;
 }
 
+.sticky {
+  position: sticky;
+  top: 96px;
+}
+
+.gray-700 {
+  color: var(--gray--700);
+}
+
 .flex-right {
   display: flex;
   flex-direction: row;
   gap: 16px;
+}
+
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.vertical-center {
+  vertical-align: middle;
 }
 
 .width-fill {
@@ -63,9 +82,11 @@ ul {
 }
 
 .section-header {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
-  justify-content: space-between;
+  gap: 16px;
 }
 
 .grid-2row {
@@ -116,7 +137,8 @@ nav a:hover {
 
 /* hero */
 #hero {
-  height: 100dvh;
+  margin-top: 96px;
+  gap: 128px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -133,7 +155,6 @@ nav a:hover {
   flex-direction: column;
   justify-content: flex-start;
   gap: 16px;
-  width: 100%;
   height: 50%;
 }
 
@@ -189,6 +210,7 @@ nav a:hover {
   background-color: var(--gray-100);
   padding: 24px;
   border-radius: 24px;
+  gap: 24px;
   background-color: white;
   border: 1px solid var(--gray-100);
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.016);
@@ -196,18 +218,31 @@ nav a:hover {
 
 /* Gallery */
 #Gallery .card {
+  overflow: hidden;
   border-radius: 16px;
   padding: 0px;
-  overflow: hidden;
+  flex-direction: row;
+  justify-items: flex-end;
 }
 
-#Gallery .card h2 {
+#Gallery a {
+  text-decoration: none;
+  display: flex;
   position: absolute;
-  margin: 32px;
+  width: 100%;
+  margin: 0px;
+  color: white;
+  align-self: flex-end;
+  padding: 32px;
 }
 
-.card img {
+#Gallery .card img {
   width: 100%;
+  transition: 0.15s ease-in-out;
+}
+
+#Gallery .card img:hover {
+  scale: 1.05;
 }
 
 /* CTA */

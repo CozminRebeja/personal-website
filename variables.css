@@ -17,18 +17,26 @@ body {
   font-family: inter, sans-serif;
   vertical-align: middle;
   margin: 0px;
+  scroll-behavior: smooth;
 }
 
 section {
+  display: flex;
+  flex-direction: column;
   max-width: 1280px;
   padding: 96px;
-  padding-bottom: 32px;
+  padding-bottom: 64px;
+  padding-top: 64px;
+  gap: 64px;
   width: -webkit-fill-available;
 }
 
 p {
   font-size: 16px;
   color: var(--gray-700);
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 1.5em;
 }
 
 h1 {
@@ -43,6 +51,15 @@ h2 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-size: 48px;
+  unicode-bidi: isolate;
+}
+
+h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 32px;
   unicode-bidi: isolate;
 }
 
@@ -64,7 +81,9 @@ h4 {
   gap: 8px;
   border: 0;
   width: fit-content;
+  transition: 0.3s ease-in-out;
 }
+
 .link-button:hover {
   background-color: white;
   opacity: 0.8;
@@ -79,12 +98,26 @@ button {
   background-color: var(--brand-500);
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
+  transition: 0.3s ease-in-out;
 }
 
 button:hover {
   background-color: #e64a19;
+}
+
+.second {
+  background-color: white;
+  padding: 10px;
+  color: var(--gray-950);
+  border-radius: 6px;
+  border: 1px solid var(--gray-100);
+}
+
+.second:hover {
+  background-color: white;
+  color: var(--gray-700);
 }
